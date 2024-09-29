@@ -11,5 +11,7 @@ public interface WeatherStationObservable {
 
     public void setTemperature(double temperature);
 
+    public double getTemperature();
+
 
 }

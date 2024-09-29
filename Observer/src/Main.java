@@ -16,7 +16,9 @@ public class Main {
         weatherStationObservable.addObserver(mobileObserver);
         weatherStationObservable.addObserver(emailObserver);
 
-        weatherStationObservable.setTemperature(23);
+        weatherStationObservable.setTemperature(89);
+        System.out.println("-------------------------------------------------------------------------------------------------");
+        weatherStationObservable.setTemperature(76);
 
 
 

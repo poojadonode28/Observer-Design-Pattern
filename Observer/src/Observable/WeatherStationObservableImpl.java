@@ -35,8 +35,10 @@ public class WeatherStationObservableImpl implements WeatherStationObservable{
            }
     }
 
-
-
+    @Override
+    public double getTemperature() {
+        return this.temperature;
+    }
 
 
 }

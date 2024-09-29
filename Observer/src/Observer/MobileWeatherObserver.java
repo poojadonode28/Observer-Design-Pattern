@@ -14,11 +14,12 @@ public class MobileWeatherObserver implements WeatherObserver{
 
     @Override
     public void update() {
-        sendMessage(number);
+        double temperature = weatherStationObservable.getTemperature();
+        sendMessage(number,temperature);
     }
 
-    public void sendMessage(String number){
-        System.out.println("Message sent successfully to user: "+number);
+    public void sendMessage(String number,Double temperature){
+        System.out.println("Mobile Notification to "+number+": The temperature has been set to "+ temperature);
 
     }
 }

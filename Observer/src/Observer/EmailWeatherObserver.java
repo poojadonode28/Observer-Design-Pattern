@@ -13,9 +13,11 @@ public class EmailWeatherObserver implements WeatherObserver{
 
     @Override
     public void update() {
-        sendEmail(email);
+        double temperature = weatherStationObservable.getTemperature();
+        sendEmail(email,temperature);
     }
-    public void sendEmail(String email){
-        System.out.println("Email sent successfully to user: "+email);
+    public void sendEmail(String email,Double temperature){
+        System.out.println("Email Notification to "+email+": The temperature has been set to "+ temperature);
+
     }
 }
